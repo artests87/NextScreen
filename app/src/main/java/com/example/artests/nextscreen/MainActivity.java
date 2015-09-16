@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -16,9 +18,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         Button button1=(Button)findViewById(R.id.button);
-        Button button2=(Button)findViewById(R.id.button2);
+        Button button3=(Button)findViewById(R.id.button3);
         button1.setOnClickListener(this);
-        button2.setOnClickListener(this);
+        button3.setOnClickListener(this);
     }
 
     @Override
@@ -49,10 +51,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button:
                 intent = new Intent(MainActivity.this, AboutActivity.class);
                 break;
-            case R.id.button2:
+            case R.id.button3:
+                EditText editTextName=(EditText)findViewById(R.id.editTextName);
+                EditText editTextDescription=(EditText)findViewById(R.id.editTextDescription);
                 intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra(getResources().getString(R.string.text_whom_string),editTextName.getText().toString());
+                intent.putExtra(getResources().getString(R.string.text_description_string), editTextDescription.getText().toString());
                 break;
         }
         startActivity(intent);
+
     }
 }

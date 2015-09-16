@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -11,6 +12,13 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+        String name;
+        String description;
+        name=getIntent().getStringExtra(getResources().getString(R.string.text_whom_string));
+        description=getIntent().getStringExtra(getResources().getString(R.string.text_description_string));
+        TextView textViewReceiver=(TextView)findViewById(R.id.textViewReceive);
+        String textReceived=getResources().getString(R.string.text_received);
+        textViewReceiver.setText(name+textReceived+description);
     }
 
     @Override

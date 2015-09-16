@@ -13,4 +13,12 @@
     <string name="title_activity_second">SecondActivity</string>
     <string name="button1">About Activity</string>
     <string name="button2">Second Activity</string>
+    <string name="button3">Передать</string>
+    <string name="text_whom">Кому</string>
+    <string name="text_description">Описание</string>
+    <string name="text_description_received">дырку от бубеля</string>
+    <string name="text_whom_received">Животинка</string>
+    <string name="text_whom_string">username</string>
+    <string name="text_description_string">description</string>
+    <string name="text_received">, Вам передали -  </string>
 </resources>
