@@ -10,4 +10,7 @@
     Всё ходит по цепи кругом;\n
     Идёт <b>направо</b> - песнь заводит,\n
     <b>Налево</b> - сказку говорит.</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="button1">About Activity</string>
+    <string name="button2">Second Activity</string>
 </resources>
