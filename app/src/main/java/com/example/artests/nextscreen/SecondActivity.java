@@ -14,11 +14,13 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
         String name;
         String description;
+        String sendler;
         name=getIntent().getStringExtra(getResources().getString(R.string.text_whom_string));
         description=getIntent().getStringExtra(getResources().getString(R.string.text_description_string));
+        sendler=getIntent().getStringExtra(getResources().getString(R.string.username_send));
         TextView textViewReceiver=(TextView)findViewById(R.id.textViewReceive);
         String textReceived=getResources().getString(R.string.text_received);
-        textViewReceiver.setText(name+textReceived+description);
+        textViewReceiver.setText(name+textReceived+description+getResources().getString(R.string.text_sendler)+sendler);
     }
 
     @Override

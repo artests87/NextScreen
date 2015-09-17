@@ -54,9 +54,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button3:
                 EditText editTextName=(EditText)findViewById(R.id.editTextName);
                 EditText editTextDescription=(EditText)findViewById(R.id.editTextDescription);
+                EditText editTextSendler=(EditText)findViewById(R.id.editTextSendler);
                 intent = new Intent(MainActivity.this, SecondActivity.class);
                 intent.putExtra(getResources().getString(R.string.text_whom_string),editTextName.getText().toString());
                 intent.putExtra(getResources().getString(R.string.text_description_string), editTextDescription.getText().toString());
+                intent.putExtra(getResources().getString(R.string.username_send), editTextSendler.getText().toString());
                 break;
         }
         startActivity(intent);

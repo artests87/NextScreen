@@ -20,5 +20,7 @@
     <string name="text_whom_received">Животинка</string>
     <string name="text_whom_string">username</string>
     <string name="text_description_string">description</string>
-    <string name="text_received">, Вам передали -  </string>
+    <string name="text_received">, Вам передали -</string>
+    <string name="text_sendler">\n <b>Отправитель - </b></string>
+    <string name="username_send">Отправитель</string>
 </resources>
